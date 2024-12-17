@@ -5,20 +5,16 @@ const components = {
     <span style="background-color: #fff;"></span>
     </span>`,
     thinking:
-        '<span class="animate-pulse text-gray-600 text-sm">Tinking...</span>',
+        '<span class="animate-pulse text-white text-sm">Tinking...</span>',
     chat_user: `
     <div class="ml-16 flex justify-end">
-        <di class="bg-gray-100 p-3 rounded-md">
-            <p class="font-medium text-blue-500 text-right text-sm">Question</p>
-            <hr class="my-2" />
-            <p class="text-gray-800">{content}</p>
+        <di class="bg-[#0071d9] px-4 py-2 rounded-lg min-w-20 rounded-br-none">
+            <p class="text-white">{content}</p>
         </di>
     </div>`,
     chat_bot: `
-    <div class="bg-gray-100 p-2 rounded-md mr-16">
-        <p class="font-medium text-blue-500 text-sm">Answer</p>
-        <hr class="my-2" />
-        <div class="text-gray-800" id="{id}">{content}</div>
+    <div class="bg-[#3e4649] px-4 py-2 rounded-lg mr-16 min-w-20 rounded-bl-none">
+        <p class="text-white" id="{id}">{content}</p>
     </div>`,
 };
 
@@ -100,7 +96,7 @@ function handleSubmitIndexing(form) {
                     progress.style.borderBottom = 0;
                 }
 
-                btn.innerHTML = `Submit`;
+                btn.innerHTML = `<i class="fa-solid fa-paper-plane"></i>`;
             })
             .catch((e) => {
                 console.error(e);
@@ -156,7 +152,7 @@ function handleSubmitQuestion(form) {
                     answerComponent.innerHTML = await markdownToHtml(text);
                 }
 
-                btn.innerHTML = `Submit`;
+                btn.innerHTML = `<i class="fa-solid fa-paper-plane text-white"></i>`;
             })
             .catch((e) => {
                 console.error(e);

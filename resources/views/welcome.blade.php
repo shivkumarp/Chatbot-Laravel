@@ -24,6 +24,7 @@
                     <p class="mt-8 text-3xl font-extrabold tracking-tight text-black md:text-5xl">
                         Turn Websites into Intelligent<br />Chatbot Conversations
                     </p>
+                    <p >tis is it</p>
                     <p class="max-w-xl mx-auto mt-4 text-base lg:text-xl text-slate-500">
                         Transform static pages into dynamic conversations, engage users, and deliver information with a conversational touch.
                     </p>
