@@ -5,7 +5,7 @@ const components = {
     <span style="background-color: #fff;"></span>
     </span>`,
     thinking:
-        '<span class="animate-pulse text-white text-sm">Tinking...</span>',
+        '<span class="animate-pulse text-white text-sm">Thinking...</span>',
     chat_user: `
     <div class="ml-16 flex justify-end">
         <di class="bg-[#0071d9] px-4 py-2 rounded-lg min-w-20 rounded-br-none">
